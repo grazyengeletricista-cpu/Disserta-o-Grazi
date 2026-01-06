@@ -1,7 +1,8 @@
+\PassOptionsToPackage{numbers}{natbib}
 \documentclass[tcc1,numbers]{coppe-delufs}
 
-\usepackage{t1enc}
-\usepackage[opções]{subfigure}
+\usepackage[T1]{fontenc}
+% Removido pacote `subfigure` com opção inválida; usar `subcaption` (carregado abaixo) quando necessário
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \usepackage{latexsym}
@@ -42,7 +43,7 @@
 % \renewcommand{\TPTnoteSettings}{\small}
 \usepackage{gensymb}
 \usepackage{comment}
-\usepackage[authoryear]{natbib}
+\usepackage{natbib}
 \usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{etoolbox}
@@ -62,7 +63,7 @@
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000
 \hbadness=10000
-\graphicspath{{./figuras/}}             % pastas onde estão as figuras
+\graphicspath{{./Figuras/}{./figuras/}}             % pastas onde estão as figuras
  
 
 \makelosymbols
@@ -250,7 +251,6 @@ PROGRAMA DE PÓS-GRADUAÇÃO EM ENGENHARIA ELÉTRICA
 % \vspace{10mm}
 
 {\normalsize Orientador: Douglas Bressan Riffel}\\
- \newline
  
 \vspace{70mm}
 
